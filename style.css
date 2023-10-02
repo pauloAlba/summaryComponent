@@ -121,7 +121,6 @@ main{
 @media (max-width: 60rem) {
   .flex-container{
     box-shadow: none;
-    height: 100vh;
   }
   .flex-wrapper1{
     width: 100%;
@@ -130,7 +129,6 @@ main{
     width: 100%;
   }
 }
-
 .flex-wrapper2 h3{
   color: #333;
   width: 100%;
