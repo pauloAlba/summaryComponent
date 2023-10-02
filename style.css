@@ -1,0 +1,211 @@
+:root{
+  font-size: 62.5%;
+  /* PRIMARY */
+--Light-red: hsl(0, 100%, 67%);
+--Orangey-yellow: hsl(39, 100%, 56%);
+--Green-teal: hsl(166, 100%, 37%);
+--Cobalt-blue: hsl(234, 85%, 45%);
+
+  /* GRADIENTS */
+--Light-slate-blue: hsl(252, 100%, 67%); /* BACKGROUND */
+--Light-royal-blue: hsl(241, 81%, 54%); /* BACKGROUND */
+
+--Violet-blue: hsla(256, 72%, 46%, 1); /* CIRCLE */
+--Persian-blue: hsla(241, 72%, 46%, 0);  /* CIRCLE */
+
+  /* NEUTRAL */
+--White: hsl(0, 0%, 100%);
+--Pale-blue: hsl(221, 100%, 96%);
+--Light-lavender: hsl(241, 100%, 89%);
+--Dark-grayBlue: hsl(224, 30%, 27%);
+
+/* Use transparency to get the colour variations necessary to match the design. Hint: look into using `hsla(*/
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:100vh;  
+}
+
+.flex-container{
+  font-family: 'Hanken Grotesk', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: auto;
+  box-shadow: 0px 15px 20px rgba(48, 107, 155, 0.13);
+  border-radius: 30px ;
+}
+
+.flex-wrapper1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(var(--Light-slate-blue) 1%,var(--Light-royal-blue)90%);
+  color: var(--White);
+  height: 45rem;
+  width: 35%;
+  min-width: 35rem;
+  border-radius: 30px ;
+  gap: 2rem;
+}
+
+.flex-wrapper1 div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: var(--Light-royal-blue);
+  background-image: linear-gradient(var(--Violet-blue) 5%, var(--Persian-blue) 50%);
+  border-radius: 100px;
+  width: 170px;
+  height: 170px;
+  font-size: 3rem;
+}
+.flex-wrapper1 span{
+  font-size: 2.2rem;
+  opacity: .7;
+
+}
+.flex-wrapper1 div p{
+  font-size: 1rem;
+  opacity: .5;
+}
+.flex-wrapper1 div h2{
+  font-size: 6rem;
+  font-weight: 600;
+}
+.flex-wrapper1 h2{
+  font-size: 3rem;
+  font-weight: 300;
+}
+.flex-wrapper1 > p{
+  font-size: 1.6rem;
+  opacity: .5;
+  width: 22rem;
+  text-align: center;
+  font-weight: 400;
+}
+
+
+@media (max-width: 42rem) {
+  .flex-wrapper1 > p{
+    font-size: 1.6rem;
+    width: 28rem;
+  }
+}
+.flex-wrapper2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 35rem;
+  width: 50%;
+  min-width: 35rem;
+  padding: 0 2.5rem;
+  border-radius: 0 0 30px 30px ;
+  gap: 2rem;
+}
+@media (max-width: 60rem) {
+  .flex-container{
+    box-shadow: none;
+    height: 100vh;
+  }
+  .flex-wrapper1{
+    width: 100%;
+  }
+  .flex-wrapper2{
+    width: 100%;
+  }
+}
+
+.flex-wrapper2 h3{
+  color: #333;
+  width: 100%;
+  font-size: 2rem;
+}
+.flex-wrapper2 ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 1.5rem;
+}
+li{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-size: 1.6rem;
+}
+
+li p{
+  color: #333;
+  font-weight: bold;
+}
+li bold{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+li span{
+  color: rgba(0, 0, 0, 0.281);
+}
+.flex-wrapper2 li:nth-child(1){
+  color: var(--Light-red);
+  background-color:  hsla(0, 100%, 67%, 0.055);
+  padding: 10px;
+  border-radius: 10px;
+}
+.flex-wrapper2 li:nth-child(2){
+  color: var(--Orangey-yellow);
+  background-color:  hsla(39, 100%, 56%, 0.055);
+  padding: 10px;
+  border-radius: 10px;
+}
+.flex-wrapper2 li:nth-child(3){
+  color: var(--Green-teal);
+  background-color: hsla(166, 100%, 37%, 0.055);
+  padding: 10px;
+  border-radius: 10px;
+}
+.flex-wrapper2 li:nth-child(4){
+  color: var(--Light-lavender);
+  background-color: hsla(234, 85%, 45%, 0.055);
+  padding: 10px;
+  border-radius: 10px;
+}
+.flex-wrapper2 button{
+  background-color: var(--Dark-grayBlue);
+  padding: 1.8rem 10rem;
+  border-radius: 50px;
+  color: var(--White);
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  font-size: 1.6rem;
+}
+.flex-wrapper2 button:active{
+  background-image: linear-gradient(var(--Light-slate-blue) 1%,var(--Light-royal-blue)90%);
+  
+}
+@media (max-width: 60rem) {
+  .flex-wrapper1{
+    border-radius: 0 0 25px 25px ;
+  }
+}
